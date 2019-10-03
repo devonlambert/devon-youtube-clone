@@ -1,0 +1,22 @@
+{
+  "name": "youtube-clone",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "env-cmd -f ./config/dev.env nodemon ./bin/www -e js,html,hbs,scss"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "nodemon": "^1.19.3"
+  }
+}
