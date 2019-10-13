@@ -1,34 +1,12 @@
-.siteContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template: auto;
-  grid-template-areas: "header header header header" ". main main ."; }
-  .siteContainer main {
-    margin: 0 24px 0; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
-.mainNav {
-  grid-area: header;
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  display: flex; }
-  .mainNav nav {
-    display: none; }
-  .mainNav > ul {
-    list-style: none; }
-  .mainNav > ul li {
-    display: inline-block;
-    width: 24px;
-    height: 24px; }
+html {
+  font-size: 62.5%; }
 
-.navTrigger {
-  display: inline-block;
-  cursor: pointer; }
-
-.siteLogo {
-  width: 80px;
-  height: 24px; }
-
-a.profile img {
-  width: 24px;
-  height: 24px; }
+body {
+  box-sizing: border-box; }
