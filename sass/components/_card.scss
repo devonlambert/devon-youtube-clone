@@ -1,8 +1,50 @@
 .card {
     font-size: $default-font-size;
+    cursor: pointer;
 
     &__image {
+        position: relative;
+    }
 
+    &__image-overlay {
+        position: absolute;
+        width: 36rem;
+        height: 20rem;
+
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        display: inline-block;
+    }
+
+    &__video-length,
+    &__video-watch-later,
+    &__video-queue {
+        position: absolute;
+        background-color: $color-black;
+        color: $color-white;
+    }
+
+    &__video-play {
+        @include absCenter;
+    }
+
+    &__video-length {
+        bottom: .7rem;
+        right: .7rem;
+        padding: .2rem;
+    }
+
+    &__video-watch-later {
+        top: .7rem;
+        right: .7rem;
+        padding: .2rem;
+    }
+
+    &__video-queue {
+        top: 4rem;
+        right: .7rem;
+        padding: .2rem;
     }
 
     &__data {

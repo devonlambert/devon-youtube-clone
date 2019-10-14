@@ -7,7 +7,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: Roboto, Arial, sans-serif; }
 
 body {
   box-sizing: border-box; }
@@ -110,7 +111,39 @@ body {
     height: 2.4rem; }
 
 .card {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  cursor: pointer; }
+  .card__image {
+    position: relative; }
+  .card__image-overlay {
+    position: absolute;
+    width: 36rem;
+    height: 20rem;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: inline-block; }
+  .card__video-length, .card__video-watch-later, .card__video-queue {
+    position: absolute;
+    background-color: #000;
+    color: #fff; }
+  .card__video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card__video-length {
+    bottom: .7rem;
+    right: .7rem;
+    padding: .2rem; }
+  .card__video-watch-later {
+    top: .7rem;
+    right: .7rem;
+    padding: .2rem; }
+  .card__video-queue {
+    top: 4rem;
+    right: .7rem;
+    padding: .2rem; }
   .card__data {
     padding-top: 1rem; }
   .card__profile-image, .card__meta {
