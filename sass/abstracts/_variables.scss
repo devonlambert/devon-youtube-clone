@@ -1,4 +1,38 @@
-$logoWidth: 80px !default;
-$logoHeight: 24px !default;
-$navIconWidth: 24px !default;
-$navIconHeight: 24px !default;
+// Colors
+$color-gray: #555 !default;
+$color-dark-gray: #333 !default;
+$color-light-gray: #888 !default;
+
+$color-white: #fff !default;
+$color-black: #000 !default;
+
+$color-primary: #F9F9F9;
+// $color-primary-light: #7ed56f;
+// $color-primary-dark: #28b485;
+
+// $color-secondary-light: #ffb900;
+// $color-secondary-dark: #ff7730;
+
+// $color-tertiary-light: #2998ff;
+// $color-tertiary-dark: #5643fa;
+
+// $color-grey-light-1: #f7f7f7;
+// $color-grey-light-2: #eee;
+
+// $color-grey-dark: #777;
+// $color-grey-dark-2: #999;
+// $color-grey-dark-3: #333;
+
+// FONT
+$default-font-size: 1.6rem !default;
+
+// GRID
+$grid-width: 114rem !default;
+$gutter-vertical: 8rem !default;
+$gutter-horizontal: 6rem !default;
+
+// ICON SIZING
+$navigation-logo-width: 8rem !default;
+$navigation-logo-height: 2.4rem !default;
+$navigation-icon-width: 2.4rem !default;
+$navigation-icon-height: 2.4rem !default;

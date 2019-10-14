@@ -5,8 +5,10 @@
 @import 'base/typography';
 
 @import 'layout/grid';
-@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/main';
 
+@import 'components/navigation';
 @import 'components/card';
 
 @import 'pages/home';

@@ -10,3 +10,61 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.header {
+  padding: 1rem 2rem;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%; }
+
+.main {
+  background-color: #F9F9F9;
+  height: 100vh; }
+
+.navigation {
+  position: relative; }
+  .navigation::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .navigation__list {
+    visibility: hidden;
+    opacity: 0;
+    height: 0; }
+  .navigation__trigger, .navigation__logo {
+    float: left; }
+  .navigation__trigger {
+    height: 2.4rem;
+    width: 2.4rem;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 1rem;
+    padding: .4rem; }
+  .navigation__trigger-bar {
+    position: relative; }
+    .navigation__trigger-bar, .navigation__trigger-bar::before, .navigation__trigger-bar::after {
+      width: 2rem;
+      height: 2px;
+      background-color: #555;
+      display: inline-block; }
+    .navigation__trigger-bar::before, .navigation__trigger-bar::after {
+      content: "";
+      position: absolute;
+      left: 0; }
+    .navigation__trigger-bar::before {
+      top: -.5rem; }
+    .navigation__trigger-bar::after {
+      top: .5rem; }
+  .navigation__logo {
+    width: 8rem;
+    height: 2.4rem; }
+  .navigation__cta {
+    list-style: none;
+    float: right; }
+  .navigation__cta-item {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem; }
+  .navigation__cta-profile {
+    width: 2.4rem;
+    height: 2.4rem; }

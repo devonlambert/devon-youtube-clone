@@ -1,0 +1,70 @@
+.navigation {
+
+    position: relative;
+    @include clearfix;
+
+    &__list {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+
+    &__trigger,
+    &__logo {
+        float: left;
+    }
+
+    &__trigger {
+        height: $navigation-icon-height;
+        width: $navigation-icon-width;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 1rem;
+        padding: .4rem;
+    }
+
+    &__trigger-bar {
+        position: relative;
+
+        &,
+        &::before,
+        &::after {
+            width: 2rem;
+            height: 2px;
+            background-color: $color-gray;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &::before { top: -.5rem; }
+        &::after { top: .5rem; }
+    }
+
+    &__logo {
+        width: $navigation-logo-width;
+        height: $navigation-logo-height;
+    }
+
+    &__cta {
+        list-style: none;
+        float: right;
+
+    }
+
+    &__cta-item {
+        display: inline-block;
+        width: $navigation-icon-width;
+        height: $navigation-icon-height;
+    }
+
+    &__cta-profile {
+        width: $navigation-icon-width;
+        height: $navigation-icon-height;
+    }
+}
