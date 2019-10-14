@@ -105,7 +105,10 @@ body {
   .navigation__cta-item {
     display: inline-block;
     width: 2.4rem;
-    height: 2.4rem; }
+    height: 2.4rem;
+    color: #555; }
+    .navigation__cta-item:not(:last-child) {
+      margin-right: .8rem; }
   .navigation__cta-profile {
     width: 2.4rem;
     height: 2.4rem; }

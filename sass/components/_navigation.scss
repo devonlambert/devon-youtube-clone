@@ -54,13 +54,16 @@
     &__cta {
         list-style: none;
         float: right;
-
     }
 
     &__cta-item {
         display: inline-block;
         width: $navigation-icon-width;
         height: $navigation-icon-height;
+
+        &:not(:last-child) {
+            margin-right: .8rem;
+        }
     }
 
     &__cta-profile {
