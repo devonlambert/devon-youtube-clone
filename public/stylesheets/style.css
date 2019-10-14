@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -11,6 +12,34 @@ html {
 body {
   box-sizing: border-box; }
 
+.section__title {
+  font-size: 2rem;
+  font-weight: 400; }
+
+.card__video-title {
+  font-size: 1.8rem;
+  font-weight: 700; }
+
+.card__video-author, .card__views, .card__upload-date {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #555; }
+
+.row {
+  max-width: 36rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 1.6rem;
+      margin-bottom: 4rem; }
+  .row.col-1-of-3 {
+    width: calc((100% - 1.6rem) / 3); }
+
 .header {
   padding: 1rem 2rem;
   position: fixed;
@@ -19,7 +48,18 @@ body {
 
 .main {
   background-color: #F9F9F9;
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 5rem; }
+
+.section {
+  padding: 2rem 0;
+  border-bottom: 4px solid #888; }
+  .section::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .section__title {
+    margin-bottom: 2rem; }
 
 .navigation {
   position: relative; }
@@ -68,3 +108,18 @@ body {
   .navigation__cta-profile {
     width: 2.4rem;
     height: 2.4rem; }
+
+.card {
+  font-size: 1.6rem; }
+  .card__data {
+    padding-top: 1rem; }
+  .card__profile-image, .card__meta {
+    float: left; }
+  .card__profile-image {
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .card__video-title {
+    margin-bottom: .5rem; }
+  .card__views::after {
+    content: '•';
+    margin-left: .5rem; }

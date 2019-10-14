@@ -1,0 +1,21 @@
+// Section
+.section__title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+// Card
+.card {
+    &__video-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    &__video-author,
+    &__views,
+    &__upload-date {
+        font-size: $default-font-size;
+        font-weight: 400;
+        color: $color-gray;
+    }
+}
